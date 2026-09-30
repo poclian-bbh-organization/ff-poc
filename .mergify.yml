@@ -1,0 +1,9 @@
+queue_rules:
+  - name: default
+    merge_method: fast-forward
+    queue_conditions:
+      - "#approved-reviews-by>=1"
+    merge_conditions:
+      - label=release-now
+
+pull_request_rules: []
